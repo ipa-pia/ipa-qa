@@ -17,22 +17,22 @@
 
 server:
   http:
-    addr: 0.0.0.0:80
+    addr: 0.0.0.0:8080
 data:
   database:
     driver: "sqlite3"
-    connection: "/data/sqlite3/answer.db"
+    connection: "/data/answer/answer.db"
   cache:
-    file_path: "/data/cache/cache.db"
+    file_path: "/data/answer/cache.db"
 i18n:
-  bundle_dir: "/data/i18n"
+  bundle_dir: "/data/answer/i18n"
 swaggerui:
   show: true
   protocol: http
   host: 127.0.0.1
-  address: ':80'
+  address: ':8080'
 service_config:
-  upload_path: "/data/uploads"
+  upload_path: "/data/answer/uploads"
   clean_up_uploads: true
   clean_orphan_uploads_period_hours: 48
   purge_deleted_files_period_days: 30
